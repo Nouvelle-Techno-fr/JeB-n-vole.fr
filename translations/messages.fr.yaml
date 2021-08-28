@@ -1,1 +1,30 @@
 'Hello': 'Bonjour %name%'
+'association_name': 'Association :'
+'association_email': 'Email :'
+'association_address': 'Adresse :'
+'association_zip': 'Code postal :'
+'association_city': 'Ville :'
+'association_fixNumber': 'Numéro fixe :'
+'association_cellNumber': 'Numéro cellulaire :'
+'association_faxNumber': 'Fax :'
+'association_description': 'Description :'
+'association_picture': 'Logo :'
+'association_website': 'Site internet :'
+'association_facebook': 'Lien Facebook :'
+'association_linkedin': 'Lien LinkedIn :'
+'association_youtube': 'Lien Youtube :'
+'association_twitter': 'Lien Twitter :'
+
+
+
+
+
+
+
+
+
+
+
+
+
+

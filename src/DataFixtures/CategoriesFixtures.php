@@ -24,7 +24,7 @@ class CategoriesFixtures extends Fixture
             $categories->setName('test ' .$i);
             $categories->setIsActived(true);
             $categories->setColor('color ' .$i);
-            $categories->setParentId(1);
+            //$categories->setParentId(1);
             $categories->setIsActived(true);
             $categories->setSlug($this->slugger->slug($categories->getName())->lower());
             $categories->setDescription('description ' .$i);

@@ -21,16 +21,16 @@ class AssociationsFixtures extends Fixture
     {
         for($i = 0; $i <= 10; $i++){
             $associations = new Associations();
-            $associations->setName('test ' .$i);
-            $associations->setEmail('test@test.fr ' .$i);
-            $associations->setAddress('adresse ' .$i);
-            $associations->setZip(1);
-            $associations->setCity('city ' .$i);
+            $associations->setName('test '.$i);
+            $associations->setEmail('test'.$i.'@test.fr ');
+            $associations->setAddress('adresse '.$i);
+            $associations->setZip('1234'.$i);
+            $associations->setCity('city '.$i);
             $associations->setIsBanned(false);
             $associations->setIsActived(true);
             $associations->setSlug($this->slugger->slug($associations->getName())->lower());
-            $associations->setDescription('description ' .$i);
-            $associations->setPicture('picture ' .$i);
+            $associations->setDescription('description '.$i);
+            $associations->setPicture('picture'.$i);
             $associations->setIsDeleted(false);
             $manager->persist($associations);
         }

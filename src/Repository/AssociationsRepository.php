@@ -19,32 +19,16 @@ class AssociationsRepository extends ServiceEntityRepository
         parent::__construct($registry, Associations::class);
     }
 
-    // /**
-    //  * @return Associations[] Returns an array of Associations objects
-    //  */
-    /*
-    public function findByExampleField($value)
+    /**
+     * @return Associations[] Returns an array of Associations objects
+     */
+    public function findAllAssociations()
     {
         return $this->createQueryBuilder('a')
-            ->andWhere('a.exampleField = :val')
-            ->setParameter('val', $value)
-            ->orderBy('a.id', 'ASC')
-            ->setMaxResults(10)
+            ->andWhere('a.isDeleted = :val')
+            ->setParameter('val', 0)
             ->getQuery()
             ->getResult()
         ;
     }
-    */
-
-    /*
-    public function findOneBySomeField($value): ?Associations
-    {
-        return $this->createQueryBuilder('a')
-            ->andWhere('a.exampleField = :val')
-            ->setParameter('val', $value)
-            ->getQuery()
-            ->getOneOrNullResult()
-        ;
-    }
-    */
 }

@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AssociationController!{% endblock %}
+
+{% block body %}
+    <h1>List Association</h1>
+
+    {% for association in associations %}
+        {{ association.name }}
+    {% endfor %}
+
+{% endblock %}

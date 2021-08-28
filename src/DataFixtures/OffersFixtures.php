@@ -40,7 +40,7 @@ class OffersFixtures extends Fixture
             $offers->setRecommended(true);
             $offers->setContactExternalName('contactExternal ' .$i);
             $offers->setContactExternalEmail('externalEmail ' .$i);
-            $offers->setContactExternalTel('externalContactTel ' .$i);
+            $offers->setContactExternalTel('externalContactTel' .$i);
             $offers->setSlug($this->slugger->slug($offers->getTitle())->lower());
             $offers->setDescription('description ' .$i);
             $manager->persist($offers);
